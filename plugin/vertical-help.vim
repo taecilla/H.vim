@@ -3,4 +3,9 @@ if exists('s:vertical_help_loaded')
 endif
 let s:vertical_help_loaded = 1
 
-command! -nargs=? -complete=help H call vertical_help#vertical_help(<q-args>)
+command! -nargs=? -bang -complete=help H
+	\ if <bang>1 |
+		\ call vertical_help#vertical_help(<q-args>) |
+	\ else |
+		\ help <args> | only |
+	\ endif
