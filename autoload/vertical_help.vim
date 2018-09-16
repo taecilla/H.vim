@@ -5,8 +5,8 @@ else
 endif
 
 function! vertical_help#vertical_help(pattern)
-	execute "vertical help " . a:pattern
+	execute "botright vertical help" a:pattern
 	if winwidth (winnr()) != s:window_width
-		execute "vertical resize " . s:window_width
+		execute "vertical resize" s:window_width
 	endif
 endfunction
