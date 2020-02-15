@@ -5,7 +5,3 @@
 as `:vertical help`, but it also resizes the help window to
 `g:vertical_help_window_width` (79 by default).
 2. `:H!` opens the help and close all the other windows.
-
-# License
-
-[CC0](https://creativecommons.org/publicdomain/zero/1.0/)
