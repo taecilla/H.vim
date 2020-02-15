@@ -2,6 +2,5 @@
 `:help`:
 
 1. `:H` opens the help in a vertical window. It works the same way
-as `:vertical help`, but it also resizes the help window to
-`g:vertical_help_window_width` (79 by default).
+as `:vertical help`.
 2. `:H!` opens the help and close all the other windows.
