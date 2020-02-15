@@ -7,5 +7,5 @@ command! -nargs=? -bang -complete=help H
 	\ if <bang>1 |
 		\ call vertical_help#vertical_help(<q-args>) |
 	\ else |
-		\ help <args> | only |
+		\ call vertical_help#on_current_window(<q-args>) |
 	\ endif
